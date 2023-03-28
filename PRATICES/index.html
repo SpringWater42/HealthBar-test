@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Health bar test</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <center>
+    <h1>Health Bar</h1>
+    <h3>HP</h3>
+    <progress id="health" value="100" max="100"></progress>
+    <center>
+      <br />
+      <button id="Hit" onclick="damage()">Hit</button>
+      <button id="HeavyHit" onclick="heavydamage()">Heavy Hit</button>
+      <br />
+      <br />
+      <button id="Heal" onclick="patch()">Heal</button>
+      <button id="Fullpatch" onclick="full()">Full patch</button>
+      <br />
+      <br />
+      <button id="Flame" onclick="flame()">Flame</button>
+    </center>
+    <p id="Hurt"></p>
+    <p id="H.Hurt"></p>
+    <p id="Patch"></p>
+    <p id="F.Patch"></p>
+    <p id="Flame"></p>
+  </center>
+  <script src="system.js"></script>
+</body>
+
+</html>
