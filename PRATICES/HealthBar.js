@@ -4,6 +4,8 @@ const Heal = document.getElementById("Heal");
 const Fullpatch = document.getElementById("Fullpatch");
 const Flame = document.getElementById("Flame");
 
+
+//Functionality of all the buttons
 Heal.addEventListener("click", () => {
   let health = document.getElementById("health");
   health.value += 50;
@@ -43,6 +45,7 @@ Flame.addEventListener("click", () => {
   sound.currentTime = 0;
   sound.play();
 });
+//
 
 //Heal Functions//
 function patch() {
@@ -60,7 +63,7 @@ function damage() {
 function heavydamage() {
   document.getElementById("H.Hurt").innerHTML += "[I got hurt badly]<br></br> ";
 }
-//String left open
+//String left open [Error on the button display none when button is played]
 function flame() {
   document.getElementById("Flame").innerHTML += "";
 }
